@@ -17,7 +17,8 @@ export const getServerSideProps = wrapper.getServerSideProps(
     const { data } = await response.json();
     store.dispatch(addUser(`${data.first_name} ${data.last_name}`));
     store.dispatch(increment());
-  })
+  }) 
 );
+
 
 export default Other;
